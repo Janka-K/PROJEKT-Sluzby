@@ -1,0 +1,202 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+
+body {
+    font-size: 16px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    color: #8B8B8B;
+    background-color: #FAFAFA;
+    
+
+}
+
+.stranka {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align:center;
+    margin:auto;
+    margin-bottom:60px;
+    margin-top:60px;
+    
+  
+
+}
+
+.stranka h1{
+    font-size: 28px;
+    font-weight:600;
+    color:#000000;
+}
+
+.podtrzeni::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color:#407BFF;
+    margin-top:10px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.stranka h2{
+    font-size: 16px;
+    font-weight: 600;
+    color:#000000;
+}
+
+.stranka img{
+    max-width: 100%;
+}
+
+.tlacitko {
+    display: inline-block;
+    font-size:14px;
+    color: white;
+    font-weight: 500;
+    border-radius: 40px;
+    padding: 10px 30px;
+    text-decoration:none;
+}
+
+.dobrodruzstvi {
+    background-color: #407BFF;
+    margin-bottom: 10px;
+
+
+}
+
+.plaz {
+    background-color: #8B8B8B;
+
+}
+
+.prvni,.druha,.treti {
+    margin-bottom: 60px;
+}
+
+.prvni p, .druha p, .treti p{
+    margin-bottom:30px;
+}
+
+.mapa,.kaktus,.letadlo, .palma, .destnik,.karavan {
+    display:flex;
+    background-color: white;
+    padding: 30px 20px 20px 20px;
+    font-size: 13px;
+    border-radius:10px;
+    box-shadow:0px 4px 6px #407BFF1F;
+    margin-bottom:15px;
+
+
+}
+
+
+.mapa p, .kaktus p, .letadlo p,.palma p, .destnik p, .karavan p{
+    flex: 0 100%;
+    margin-bottom: 0;
+}
+
+
+.mapa img, .kaktus img, .letadlo img,.palma img, .destnik img, .karavan img {
+    flex: 1 0;
+
+}
+
+
+@media screen and (min-width: 640px){
+    .tlacitka{
+        display:flex;
+        justify-content:center;
+        gap:20px;
+}
+
+
+.karticky1, .karticky2{
+    display: flex;
+    gap:20px;
+
+}
+
+.mapa,.kaktus,.letadlo, .palma, .destnik,.karavan{
+    flex-direction: column;
+    margin-bottom: 0;
+    flex-shrink: 1;
+    flex-grow:1;
+    align-items:baseline;
+    justify-content: center;
+    /*flex-basis: calc(100% / 3);*/
+}
+
+
+
+.mapa img, .kaktus img, .letadlo img,.palma img, .destnik img, .karavan img {
+    align-self: center;
+
+}
+
+
+
+.text1, .text2, .box1{
+    padding-left:80px;
+    padding-right:80px;
+    display:inline-block;
+}
+}
+
+
+@media screen and (min-width: 1100px){
+    .stranka {
+        max-width: 1040px;
+        display: grid;
+        grid-template-columns: 1040px;
+        grid-auto-rows: auto;
+        /*grid-template-areas: "horni"
+                             "prostredni"
+                             "dolni"
+*/
+    }
+
+   .prvni {
+       display:flex;
+       flex-direction:row;
+   } 
+ 
+   .prvni img{
+       order: 3;
+   }
+
+   .box1{
+       order:1;
+   }
+
+   .tlacitka{
+       order:2;
+       display:inline-block;
+   }
+
+   .druha {
+       display:flex;
+
+   }
+
+   .karticky1{
+       order:1;
+   }
+
+   .text1{
+       order:2;
+   }
+
+   
+   .treti {
+       display: flex;
+   }
+
+}
+
+
+
